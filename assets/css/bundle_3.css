@@ -2704,6 +2704,7 @@ body.ver01 {
 		width: 42px;
 		height: 42px;
 		right: 16px;
+		border-width: 1px;
 	    }
 	    .menu ul.info-wrap {
 		flex-direction: column;
