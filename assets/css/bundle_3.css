@@ -1958,11 +1958,11 @@ body.ver01 {
 	margin: 8px 0;
 }
 .menu .menu-img {
-	height: 540px;
+	height: 596px;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+	background-position: bottom;
+	background-size: auto 540px;
 }
 .menu-01 .menu-img {
 	background-color: #FEF8F8;
