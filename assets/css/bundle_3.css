@@ -1987,7 +1987,7 @@ body.ver01 {
 	justify-content: space-between;
 }
 .menu .title-top h3 {
-	border-bottom: 1px solid #333333;
+	border-bottom: 2px solid #333333;
 	width: fit-content;
 	-webkit-width: fit-content;
 	-moz-width: fit-content;
@@ -2704,7 +2704,6 @@ body.ver01 {
 		width: 42px;
 		height: 42px;
 		right: 16px;
-		border-width: 1px;
 	    }
 	    .menu ul.info-wrap {
 		flex-direction: column;
