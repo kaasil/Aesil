@@ -2678,6 +2678,7 @@ body.ver01 {
 		height: 210px;
 		margin-top: 56px;
 		background-position: bottom;
+		background-size: contain;
 	    }
 	    .menu .menu-info-img {
 		margin: 48px 0;
