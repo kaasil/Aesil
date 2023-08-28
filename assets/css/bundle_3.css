@@ -2151,6 +2151,9 @@ body.ver01 {
 	.content .ui-ani-wrap {
 		height: 600px;
 	}
+	.ver01 .content.c01 > div > div.main-title {
+		padding-top: 200px;
+	}
     }
     @media screen and (max-width: 1199px) {
 	.content.c02 > div:first-of-type {
