@@ -1671,6 +1671,8 @@ header .site-header-wrap a img {
 	width: 100vw;
 	height: 48px;
 	background-color: #B398F0;
+	transition: 0.3s;
+	z-index: 1;
     }
     .banner-wrap a {
 	width: 100%;
@@ -1680,6 +1682,17 @@ header .site-header-wrap a img {
 	padding: 0 16px;
 	position: relative;
     }
+    .banner-wrap.fixed {
+		position: fixed;
+		bottom: 0px;
+		transition: 0.3s;
+		height: auto;
+		animation:fadeInUp 0.3s ease backwards;
+	}
+	@keyframes fadeInUp{
+		0%{transform:translate(0px, 48px); opacity: 0;}
+		100%{transform:translate(0px, 0); opacity: 1;}
+	}
     .banner-wrap a i {
 	display: block;
 	width: 314px;
@@ -1932,6 +1945,13 @@ header .site-header-wrap a img {
     .ver01 .content.c03 .grid-wrap .top-text h5 {
 	font-size: 22px;
 	line-height: 30px;
+}
+.ver02 .content.footer {
+	min-height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .menu .content > div:first-of-type {
 	min-height: auto;

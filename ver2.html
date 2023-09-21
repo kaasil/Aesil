@@ -1060,6 +1060,37 @@
   });
   </script>
   <script>
+	var bannerWrap = document.querySelector('div.banner-wrap');
+var footerElement = document.querySelector('.ver02 .content.footer');
+var c01Element = document.querySelector('.content.c01');
+var isFixed = false;
+
+function handleScroll() {
+  var scrollY = window.scrollY || window.pageYOffset;
+  var c01Rect = c01Element.getBoundingClientRect();
+  var footerRect = footerElement.getBoundingClientRect();
+  var windowHeight = window.innerHeight;
+
+  // .content.c01 요소의 하단 위치를 기준으로 100px 이상 스크롤되었을 때 fixed 클래스를 추가
+  if (!isFixed && c01Rect.bottom + 100 <= windowHeight) {
+    bannerWrap.classList.add('fixed');
+    isFixed = true;
+  } else if (isFixed && c01Rect.bottom + 100 > windowHeight) {
+    bannerWrap.classList.remove('fixed');
+    isFixed = false;
+  }
+
+  // .ver01 .content.footer 요소에 도달하면 fixed 클래스 제거
+  if (footerRect.top <= windowHeight && isFixed) {
+    bannerWrap.classList.remove('fixed');
+    isFixed = false;
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+
+	</script>
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
       // 팝업 열기 함수 (일반화)
       function openPopup(popupId) {
