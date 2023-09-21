@@ -2745,6 +2745,12 @@ body.ver01 {
 		order: 2;
 		width: calc(100% - 54px);
 	    }
+	    .banner-wrap {
+		height: 56px;
+	    }
+	    .banner-wrap.fixed {
+		height: 56px;
+	    }
     }
     @media all and (max-width:375px) {
 	.content.c01 > div > div.main-title {
